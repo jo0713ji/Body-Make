@@ -115,3 +115,6 @@
 3. 機能実装：3/9 - 4/19
 4. β版をRUNTEQ内リリース（MVP）：4/19〆切
 5. 本番リリース：5/7
+
+### 画面遷移図
+Figma：https://www.figma.com/file/Cw112xKa7p33xKdQ38QCJW/Body-Make?node-id=0%3A1&t=HH35o3rMO5J6heNa-1
