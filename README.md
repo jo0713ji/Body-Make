@@ -118,3 +118,71 @@
 
 ### 画面遷移図
 Figma：https://www.figma.com/file/Cw112xKa7p33xKdQ38QCJW/Body-Make?node-id=0%3A1&t=HH35o3rMO5J6heNa-1
+
+### ER図
+```mermaid
+erDiagram
+users ||--o{ videos : ""
+users ||--o{ likes : ""
+videos ||--o{ likes : ""
+users ||--o{ records : ""
+videos ||--o{ video_records : ""
+records ||--o{ video_records : ""
+users ||--o{ goals : ""
+
+users {
+	id bigint　PK
+	name string
+	email string
+	crypted_password string
+	salt string
+	avater string
+	role integer
+	created_at timestamp
+	deleted_at timestamp
+}
+
+videos {
+	id bigint　PK
+	user_id integer
+	title string
+	created_at timestamp
+	deleted_at timestamp
+}
+
+likes {
+	id bigint　PK
+	user references FK
+	video references FK
+	created_at timestamp
+	deleted_at timestamp
+}
+
+records {
+	id bigint　PK
+	user references FK
+	video references FK
+	string image
+	text body
+	created_at timestamp
+	deleted_at timestamp
+}
+
+video_records {
+	id bigint　PK
+	user references FK
+	video references FK
+	created_at timestamp
+	deleted_at timestamp
+}
+
+goals {
+	id bigint　PK
+	title string
+	date dedline
+	image string
+	body text
+	created_at timestamp
+	deleted_at timestamp
+}
+```
