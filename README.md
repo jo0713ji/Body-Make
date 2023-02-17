@@ -181,7 +181,7 @@ goals {
 	id bigint　PK
 	user_id integer
 	title string
-	date dedline
+	accomplished_on date
 	image string
 	body text
 	created_at timestamp
