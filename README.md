@@ -112,6 +112,83 @@
 # 画面遷移図
 Figma：https://www.figma.com/file/Cw112xKa7p33xKdQ38QCJW/Body-Make?node-id=0%3A1&t=HH35o3rMO5J6heNa-1
 
+# ER図
+```mermaid
+erDiagram
+users ||--o{ videos : "1人のuserが複数のvideoを見ることができる"
+users ||--o{ likes : "1人のuserが複数のvideoをlike(お気に入り)できる"
+categories ||--o{ videos : "1つのカテゴリーに複数のvideoがある"
+videos ||--o{ likes : "1つのvideoを複数のuserがlike(お気に入り)できる"
+users ||--o{ records : "1人のuserが複数の記録を持つ"
+videos ||--o{ video_records : "1つのvideoを複数の記録に表示できる"
+records ||--o{ video_records : "1つの記録に複数のvideoを載せることができる"
+users ||--o{ goals : "1人のユーザーが複数の目標を設定できる"
+
+users {
+	id bigint　PK
+	name string
+	email string
+	crypted_password string
+	salt string
+	avater string
+	role integer
+	created_at timestamp
+	deleted_at timestamp
+}
+
+videos {
+	id bigint　PK
+	user_id integer
+	category_id integer
+	name string
+	created_at timestamp
+	deleted_at timestamp
+}
+
+categories {
+	id bigint　PK
+	name string
+	created_at timestamp
+	deleted_at timestamp
+}
+
+likes {
+	id bigint　PK
+	user_id references FK
+	video_id references FK
+	created_at timestamp
+	deleted_at timestamp
+}
+
+records {
+	id bigint　PK
+	user_id　integer FK
+	image string
+	body text
+	created_at timestamp
+	deleted_at timestamp
+}
+
+video_records {
+	id bigint　PK
+	record_id references FK
+	video_id references FK
+	created_at timestamp
+	deleted_at timestamp
+}
+
+goals {
+	id bigint　PK
+	user_id integer
+	title string
+	accomplished_on date
+	image string
+	body text
+	created_at timestamp
+	deleted_at timestamp
+}
+```
+
 # スケジュール
 
 1. 企画（アイデア企画・技術調査）：2/24〆切
