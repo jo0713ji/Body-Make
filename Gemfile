@@ -48,9 +48,27 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# UI/UX
+gem 'rails-i18n'
+gem 'enum_help'
+
+# Schema Information
+gem 'annotate'
+
+# Authentication
+gem 'sorcery'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'better_errors'
+  gem 'binding_of_caller' 
+  # Test
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'webdrivers'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :development do
@@ -64,3 +82,14 @@ group :development do
   # gem "spring"
 end
 
+# Lint
+gem 'rubocop', require: false
+gem 'rubocop-rails', require: false
+gem 'bullet'
+
+# Mail
+gem 'letter_opener_web'
+
+gem 'solargraph'
+
+gem 'google-api-client'
