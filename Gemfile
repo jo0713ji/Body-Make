@@ -93,3 +93,5 @@ gem 'letter_opener_web'
 gem 'solargraph'
 
 gem 'google-api-client'
+
+gem "tailwindcss-rails", "~> 2.0"
