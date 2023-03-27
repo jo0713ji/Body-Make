@@ -107,6 +107,8 @@ GEM
     debug_inspector (1.1.0)
     declarative (0.0.20)
     diff-lcs (1.5.0)
+    dockerfile-rails (1.2.5)
+      rails
     e2mmap (0.1.0)
     enum_help (0.0.19)
       activesupport (>= 3.0.0)
@@ -208,7 +210,11 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
+    nokogiri (1.14.2-aarch64-linux)
+      racc (~> 1.4)
     nokogiri (1.14.2-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     oauth (0.6.2)
       snaky_hash (~> 2.0)
@@ -350,7 +356,11 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
+    tailwindcss-rails (2.0.25-aarch64-linux)
+      railties (>= 6.0.0)
     tailwindcss-rails (2.0.25-arm64-darwin)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.25-x86_64-linux)
       railties (>= 6.0.0)
     thor (1.2.1)
     tilt (2.1.0)
@@ -387,7 +397,9 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
+  aarch64-linux
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   annotate
@@ -397,6 +409,7 @@ DEPENDENCIES
   bullet
   capybara
   debug
+  dockerfile-rails (>= 1.2)
   enum_help
   factory_bot_rails
   faker
