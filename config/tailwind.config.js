@@ -31,5 +31,6 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/container-queries'),
+    require("daisyui"),
   ]
 }
