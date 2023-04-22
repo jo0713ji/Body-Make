@@ -7,7 +7,7 @@
     <div class="flex md:order-2">
       <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <%= link_to 'ログアウト', logout_path, class: "mr-4 hover:underline md:mr-6", data: { turbo_method: :delete } %>
+          <%= link_to (t 'defaults.logout'), logout_path, class: "mr-4 hover:underline md:mr-6", data: { turbo_method: :delete } %>
         </li>
       </ul>
       <div class="flex-none">
