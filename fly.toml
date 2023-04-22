@@ -1,4 +1,4 @@
-# fly.toml file generated for body-make on 2023-03-27T16:09:25+09:00
+# fly.toml file generated for body-make on 2023-04-22T18:29:22+09:00
 
 app = "body-make"
 kill_signal = "SIGINT"

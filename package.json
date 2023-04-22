@@ -1,5 +1,6 @@
 {
   "dependencies": {
     "daisyui": "^2.51.5"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }

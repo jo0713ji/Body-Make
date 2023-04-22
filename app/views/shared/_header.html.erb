@@ -1,0 +1,20 @@
+<div class="navbar bg-orange-150 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <%= link_to root_path, class: "flex items-center" do %>
+      <%= image_tag('https://flowbite.com/docs/images/logo.svg', class: 'h-6 mr-3 sm:h-9', alt: 'Flowbite Logo') %>
+      <span class="self-center text-red-450 font-semibold whitespace-nowrap dark:text-white">Body Make</span>
+    <% end %>
+    <div class="flex md:order-2">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <%= link_to 'ログアウト', logout_path, class: "mr-4 hover:underline md:mr-6", data: { turbo_method: :delete } %>
+        </li>
+      </ul>
+      <div class="flex-none">
+        <button class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
