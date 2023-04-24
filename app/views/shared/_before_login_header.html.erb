@@ -7,13 +7,13 @@
     <div class="flex md:order-2">
       <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <%= link_to 'ゲストログイン', '#', class: "mr-4 hover:underline md:mr-6" %>
+          <%= link_to (t 'defaults.guest_login'), '#', class: "mr-4 hover:underline md:mr-6" %>
         </li>
         <li>
-          <%= link_to 'ログイン', login_path, class: "mr-4 hover:underline md:mr-6" %>
+          <%= link_to (t 'defaults.login'), login_path, class: "mr-4 hover:underline md:mr-6" %>
         </li>
       </ul>
-      <%= button_to '新規登録', { controller: 'users', action: 'new' }, method: :get, class: "text-white bg-red-450 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" %>
+      <%= button_to (t 'defaults.sign_up'), { controller: 'users', action: 'new' }, method: :get, class: "text-white bg-red-450 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" %>
     </div>
   </div>
 </div>

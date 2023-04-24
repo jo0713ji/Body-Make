@@ -99,4 +99,5 @@ gem "tailwindcss-rails", "~> 2.0"
 
 gem "dockerfile-rails", ">= 1.2", :group => :development
 
+# データベース
 gem "redis", "~> 5.0"
