@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   # フラッシュメッセージの種類を増やす
-  add_flash_types :success, :info, :warning, :error
+  add_flash_types :success, :error
   before_action :require_login
 
   private
