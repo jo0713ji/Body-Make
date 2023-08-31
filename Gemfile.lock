@@ -101,6 +101,8 @@ GEM
     concurrent-ruby (1.2.2)
     connection_pool (2.4.0)
     crass (1.0.6)
+    cssbundling-rails (1.2.0)
+      railties (>= 6.0.0)
     date (3.3.3)
     debug (1.7.1)
       irb (>= 1.5.0)
@@ -159,9 +161,6 @@ GEM
     httpclient (2.8.3)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    importmap-rails (1.1.5)
-      actionpack (>= 6.0.0)
-      railties (>= 6.0.0)
     io-console (0.6.0)
     irb (1.6.2)
       reline (>= 0.3.0)
@@ -169,6 +168,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jsbundling-rails (1.1.2)
+      railties (>= 6.0.0)
     json (2.6.3)
     jwt (2.7.0)
     kramdown (2.4.0)
@@ -366,12 +367,6 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
-    tailwindcss-rails (2.0.25-aarch64-linux)
-      railties (>= 6.0.0)
-    tailwindcss-rails (2.0.25-arm64-darwin)
-      railties (>= 6.0.0)
-    tailwindcss-rails (2.0.25-x86_64-linux)
-      railties (>= 6.0.0)
     thor (1.2.1)
     tilt (2.1.0)
     timeout (0.3.2)
@@ -418,14 +413,15 @@ DEPENDENCIES
   bootsnap
   bullet
   capybara
+  cssbundling-rails
   debug
   dockerfile-rails (>= 1.2)
   enum_help
   factory_bot_rails
   faker
   google-api-client
-  importmap-rails
   jbuilder
+  jsbundling-rails
   letter_opener_web
   pg (~> 1.1)
   pry-rails
@@ -440,7 +436,6 @@ DEPENDENCIES
   sorcery
   sprockets-rails
   stimulus-rails
-  tailwindcss-rails (~> 2.0)
   turbo-rails
   tzinfo-data
   web-console
